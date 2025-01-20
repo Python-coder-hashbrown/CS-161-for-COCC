@@ -1,0 +1,55 @@
+
+# Problem #1
+# x = 31
+# print(x, bin(x), hex(x))
+
+# Problem #2
+
+#@x = 1.825
+# print (x, bin(x), hex(x))
+# result: TypeError: 'float' object cannot be interpreted as an integer
+
+# x = 18
+# print (x, bin(x), hex(x))
+
+# result: 18 0b10010 0x12
+# This option doesn't work becuse we have a float.
+# Hex and bin are not designed to handle floats they're designed for integers.
+# If we wanted to do floats we would use "float.hex()"
+# For a binary rep. we could use the "struct" module I think it's called.
+
+# y = 0B1011
+
+# z = 0xA3
+
+# print (y, z)
+
+# result : 11, 163
+
+# w = x + y + z
+
+# print ('The sum is ', w)
+
+# result: The sum is 192
+
+original_size = 270
+
+compressed_size = 142
+
+dictionary_size = 25
+
+compression_equation = 1 - ((compressed_size + dictionary_size) / original_size)
+
+compression = 0.3814814814814815
+
+compression_converted = compression * 100
+
+
+print(f"Compressed Size: {compressed_size}\n")
+print(f"Dictionary Size: {dictionary_size}\n")
+print(f"Original Size: {original_size}\n")
+print(f"Compression: {compression_converted:.2f}%")
+
+
+
+# result: 0.2791666666666667
