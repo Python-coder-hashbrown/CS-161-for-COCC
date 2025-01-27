@@ -1,1 +1,34 @@
 
+# Problem #1 a success :)
+print("Hey, What is your name?")
+name = input()
+
+# I just wanted to mention that the code only worked for me
+# When I did the name = input() is it because I am declaring the
+# name as my variable?? Combing back to python for some reason
+# Throws my brain off. Maybe it's because I learned more C++?? not really sure why
+
+print("Hello " + name + " Would you please tell me your age?")
+
+age = int(input()) + 5
+
+print("Hey guess what you'll be! " + str(age))
+
+print("Enter in the number of hours you work in a week.")
+
+hours = int(input())
+
+print("Now enter your hourly wage without the $:")
+
+pay = float(input())
+
+weekly_pay = hours * pay
+
+print("Your gross pay this week is $" + str(weekly_pay) )
+
+
+# This is an error because you can only
+# concatenate a string not a string to number. Not to mention
+# you don't have the int() function that converts an input to an integer
+# And you have to turn the variable "age" into a functional string
+
